@@ -32,5 +32,27 @@ const questions = [
 
 ];
 
+// initialize app, call generateMarkdown app and writeToFile function
+function init() {
+    inquirer.prompt(questions)
+        .then(answers => {
+            var logo;
+            if (answers.shape === 'circle') {
+                logo = new Circle(answers.shapeColor, answers.txt, answers.txtColor);
+            } else if (answers.shape === 'triangle') {
+                logo = new Triangle(answers.shapeColor, answers.txt, answers.txtColor);
+            } else {
+                logo = new Square(answers.shapeColor, answers.txt, answers.txtColor);
+            }
 
+            var svg = generateSvg(logo);
+            console.log(svg);
+            return writeSVG('logo.svg', svg);
+        })
+        .catch(err => console.error(err))
+
+}
+
+// Function call to initialize app
+init();
 
