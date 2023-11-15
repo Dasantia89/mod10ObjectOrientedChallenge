@@ -56,6 +56,13 @@ function init() {
 // Function call to initialize app
 init();
 
+// write generated svg to logo file
+function writeSVG(fileName, data) {
+    writeFile(fileName, data)
+    .then(()=>console.log('Generated logo.svg'))
+    .catch(err=>coneole.error('Failed to generate logo.svg'));
+}
+
 function generateSvg(svg) {
 
     if (svg instanceof Circle) {
