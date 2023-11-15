@@ -14,7 +14,7 @@ The purpose of this project is to make it easy for developers to generate an svg
 - Open a terminal in the local repo
 - Type 'npm i'
 ## Usage Information 
-ss
+https://watch.screencastify.com/v/G8aWgpYUfOnvkhylQE6o
 ## Testing
 Tests will be added soon...
 ## License 
