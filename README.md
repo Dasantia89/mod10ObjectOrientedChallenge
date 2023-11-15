@@ -1,17 +1,27 @@
-# mod10ObjectOrientedChallenge
+# Module 10 Challenge: Object-oriented Programming Challenge   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 SVG Logo Maker
+## Description
+The purpose of this project is to make it easy for developers to generate an svg logo quickly and easily with multiple customization options available.
 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for text
-THEN I can enter up to three characters
-WHEN I am prompted for the text color
-THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I am prompted for a shape
-THEN I am presented with a list of shapes to choose from: circle, triangle, and square
-WHEN I am prompted for the shape's color
-THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I have entered input for all the prompts
-THEN an SVG file is created named `logo.svg`
-AND the output text "Generated logo.svg" is printed in the command line
-WHEN I open the `logo.svg` file in a browser
-THEN I am shown a 300x200 pixel image that matches the criteria I entered
+  ## Table of Contents<br>
+  - [Installation](#installation)
+- [Usage Information](#usage-information)
+- [Testing](#testing)
+- [License](#license)
+- [Questions](#questions)
+## Installation
+- Clone the git repo
+- Open a terminal in the local repo
+- Type 'npm i'
+## Usage Information 
+ss
+## Testing
+Tests will be added soon...
+## License 
+This project is covered under the MIT license.   https://opensource.org/licenses/MIT
+
+  ## Questions
+  
+  For additional questions send an email to: Dasantia89@yahoo.com <br>
+  Send a message on github here: http://www.github.com/dasantia89
+    
