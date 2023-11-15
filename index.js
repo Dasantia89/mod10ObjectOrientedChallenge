@@ -56,3 +56,31 @@ function init() {
 // Function call to initialize app
 init();
 
+function generateSvg(svg) {
+
+    if (svg instanceof Circle) {
+        return `
+    <svg xmlns="${svg.xmlns}" version = "${svg.ver}" width = "${svg.width}" height = "${svg.height}">
+    <circle cx="${svg.cx}" cy="${svg.cy}" r="${svg.radius}" fill="${svg.shapeFill}" anchor="middle">
+    </circle>
+    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${svg.txtFill}">${svg.text}</text>
+    </svg>
+    `;
+    } else if (svg instanceof Triangle) {
+        return `
+        <svg xmlns="${svg.xmlns}" version = "${svg.ver}" width = "${svg.width}" height = "${svg.height}">
+        <polygon points = "${svg.points}" fill="${svg.shapeFill}" >
+    </polygon>
+    <text x="100" y="165" font-size="60" text-anchor="middle" fill="${svg.txtFill}">${svg.text}</text>
+    </svg>
+    `;
+    }else {
+        return `
+        <svg xmlns="${svg.xmlns}" version = "${svg.ver}" width = "${svg.width}" height = "${svg.height}">
+        <rect x="${svg.x}" y="${svg.y}" width="${svg.w}" height="${svg.h}" fill="${svg.shapeFill}"></rect>
+   
+    <text x="150" y="150" font-size="60" text-anchor="middle" fill="${svg.txtFill}">${svg.text}</text>
+    </svg>
+    `;
+    }
+}
